@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Связаться с нами</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="" name="contact-form" class="form">
+      <header>
+        <nav class="steps">
+        </button>
+        <button type="button" id="next-step-btn" class="btn-circle">
+        </button>
+          <button type="button" id="prev-step-btn" class="btn-circle">
+          </button>
+            <h1>Связаться с нами</h1>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <div id="form-step-1" class="form-step">
+          <label for="email">Email
+          <input
+            type="email"
+            class="input"
+            name="email"
+            placeholder="ivanov@example.com"
+            required
+          />
+        </label>
+          <p id="email-error" class="validation-message"></p>
+          <label for="phone">Номер телефона
+          <input
+            type="tel"
+            class="input"
+            name="phone"
+            pattern="^\+7\d{10}$"
+            placeholder="+7 (987)-654-1212"
+            required
+          />
+        </label>
+          <p id="phone-error" class="validation-message"></p>
+          <br />
+        </div>
+        <div id="form-step-2" class="form-step">
+          <label for="photo" >Загрузить файл
+        <input  type="file" class="input" name="photo"  accept=".jpg,.png,.jpeg, image/png, image/jpeg, image/jpg" required />  
+        </label>
+          <p id="photo-error" class="validation-message"></p>
+          <button type="submit" id="submit-form-btn" class="btn">
+            Отправить
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
